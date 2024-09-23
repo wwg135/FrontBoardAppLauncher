@@ -169,10 +169,9 @@ void showDialog(UIViewController *viewController, NSString* title, NSString* mes
     self.view.backgroundColor = UIColor.systemBackgroundColor;
     self.title = @"FrontBoardAppLauncher";
 
-    [self.view addSubview:[[DecoratedAppSceneView alloc] initWithBundleID:@"com.tencent.xin"]];
-    [self.view addSubview:[[DecoratedAppSceneView alloc] initWithBundleID:@"com.ss.iphone.ugc.Aweme"]];
     [self.view addSubview:[[DecoratedAppSceneView alloc] initWithBundleID:@"com.tencent.ioshlddz"]];
     [self.view addSubview:[[DecoratedAppSceneView alloc] initWithBundleID:@"com.tencent.live4iphone"]];
+    [self.view addSubview:[[DecoratedAppSceneView alloc] initWithBundleID:@"com.tencent.xin"]];
 }
 
 @end
