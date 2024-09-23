@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@4.1.7
+        uses: actions/checkout@v4.1.7
 
       - name: Checkout theos/theos
-        uses: actions/checkout@4.1.7
+        uses: actions/checkout@v4.1.7
         with:
           repository: theos/theos
           ref: master
@@ -22,7 +22,7 @@ jobs:
           path: theos
 
       - name: Checkout theos/sdks
-        uses: actions/checkout@4.1.7
+        uses: actions/checkout@v4.1.7
         with:
           repository: theos/sdks
           ref: master
@@ -44,7 +44,7 @@ jobs:
           cd packages && mv *.ipa "`basename *.ipa .ipa`.tipa"
 
       - name: Upload artifact
-        uses: actions/upload-artifact@4.4.0
+        uses: actions/upload-artifact@v4.4.0
         with:
           name: artifact
           path: packages/*.tipa
